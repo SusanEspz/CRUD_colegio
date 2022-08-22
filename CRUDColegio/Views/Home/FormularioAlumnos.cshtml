@@ -1,0 +1,24 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name= "viewport" content="width=device-width" />
+        <title>FormularioAlumnos</title>
+    </head>
+
+    <body>
+        <div>Agregar nuevo Alumno</div>
+        <div>
+            <form method="post" action="/Home/agregarAlumno">
+                <p>Nombre: <input type="text" name="nombre" /></p>
+                <p>Apellidos: <input type="text" name="apellidos" /></p>
+                <p>Genero: <input type="text" name="genero"/></p>
+                <p>Fecha de Nacimiento: <input type="date" name="fechaN"/></p>
+                <p><input type="submit" value="Confirmar" /></p>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name= "viewport" content="width=device-width" />
+        <title>FormularioProfesores</title>
+    </head>
+
+    <body>
+        <div>Agregar nuevo Profesor</div>
+        <div>
+            <form method="post" action="/Home/agregarProfesor">
+                <p>Nombre: <input type="text" name="nombre" /></p>
+                <p>Apellidos: <input type="text" name="apellidos" /></p>
+                <p>Genero: <input type="text" name="genero"/></p>
+                <p><input type="submit" value="Confirmar" /></p>
+            </form>
+        </div>
+    </body>
+</html>

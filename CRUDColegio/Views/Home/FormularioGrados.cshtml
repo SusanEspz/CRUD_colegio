@@ -1,0 +1,26 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name= "viewport" content="width=device-width" />
+        <title>FormularioGrados</title>
+    </head>
+
+    <body>
+        <div>Agregar Grado</div>
+        <div>
+            <form method="post" action="/Home/agregarAlumno">
+                <p>Nombre del Grado: <input type="text" name="nombre" /></p>
+                
+                <tr> <td>Seleccionar Profesor:  </td>
+                    @* <td> @Html.DropDownList("Profesores", Model.lstProfesores) </td> *@
+                </tr>
+                <p><input type="submit" value="Confirmar" /></p>
+            </form>
+        </div>
+    </body>
+</html>
+
